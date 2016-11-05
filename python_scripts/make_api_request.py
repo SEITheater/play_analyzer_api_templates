@@ -70,8 +70,8 @@ class MakeAPIRequest(object):
         connection.request('POST', req.get_selector(),
                            *self.encode_multipart_data(data, files))
         response = connection.getresponse()
-        if(response.status == 200):
-          self.dataReceivedCallback(response)
+
+        self.dataReceivedCallback(response)
 
 
     def upload_file(self, server, path):

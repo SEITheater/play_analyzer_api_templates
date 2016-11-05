@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/dropzone.css">
+	</head>
+	<body>
+		<div id="uploadResult"></div>
+    <div>
+    	<p>Drag and drop PML files onto this web page in order to use their contents and the PlayAnalyzer.com server to create interactive web displays.</p>
+
+    	<p>JQuery and Dropzone are used to handle the file upload process.  The file_uploader.js file contains a global variable called globalFileList that contains all files dragged onto the page during a session. make_api_request.js contains a function called makePostRequest that will make requests to the server for you and return the response to a specified callback.</p>
+
+    </div>
+
+
+
+    <!-- Hides the automatic file uploading displays for dropzone -->
+    <div id="template"><div></div></div>
+    <div id="dropZone"></div>
+  </body>
+
+  <script type="text/javascript" src='js/jquery.min.js'></script>
+  <script type="text/javascript" src="js/make_api_requests.js"></script>
+  <script type="text/javascript" src="js/dropzone.js"></script>
+  <script type="text/javascript" src="js/file_uploader.js"></script>
+
+</html>
