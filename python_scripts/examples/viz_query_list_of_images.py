@@ -25,7 +25,7 @@ characterList = []
 def writeImageCallback(response):
     global characterList, characterListIndex, outputPath, filePath, vizType
     imagePath = outputPath + characterList[characterListIndex] + "_" + vizType + ".png"
-    writeFileCallback(response.read(), imagePath)
+    writePNGCallback(response.read(), imagePath)
     characterListIndex += 1
     if(characterListIndex < len(characterList)):
       makeChartForCharacter(filePath, characterList[characterListIndex])

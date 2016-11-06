@@ -21,7 +21,7 @@ characters = ''
 def writeImageCallback(response):
     global characters, filePath, vizType
     imagePath = characters + "_" + vizType + ".png"
-    writeFileCallback(response.read(), imagePath)
+    writePNGCallback(response.read(), imagePath)
 
 def makeChartForCharacter(filePath, characters):
   global vizType, acts, fromScene, toScene, apiRequestType

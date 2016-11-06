@@ -5,6 +5,6 @@
 
 
 # Convenience variables and functions used by the example scripts
-absoluteFilePath = ""
+absoluteFilePath = "/Users/Kevin/kmk/Current_projects/playAnalyzer/play_repository/othello/othello_pml"
 relativeOutputPath = "../outputs/"
-serverAddress = "http://api.playAnalyzer.com/"
+serverAddress = "http://localhost:1482/"

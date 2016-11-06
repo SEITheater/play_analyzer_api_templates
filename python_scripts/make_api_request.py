@@ -19,6 +19,10 @@ def writeFileCallback(contents, relPath):
     f.write(contents)
     f.close()
 
+def writePNGCallback(contents, relPath):
+    writeFileCallback(contents=contents.decode('base64'), relPath=relPath)
+
+
 class MakeAPIRequest(object):
     def __init__(self, filePath, apiRequestType, postParams, dataReceivedCallback):
         self.filePath = filePath

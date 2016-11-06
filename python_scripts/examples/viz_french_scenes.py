@@ -15,7 +15,7 @@ vizType = "french_scene_chart"
 
 def writeImageCallback(response):
     global vizType
-    writeFileCallback(response.read(), vizType + ".png")
+    writePNGCallback(response.read(), vizType + ".png")
 
 def makeChartForCharacter(filePath):
   global vizType, apiRequestType

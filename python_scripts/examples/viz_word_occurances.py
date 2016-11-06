@@ -27,7 +27,7 @@ def writeImageCallback(response):
         imagePath += word + "_"
     imagePath += ".png"
 
-    writeFileCallback(response.read(), imagePath)
+    writePNGCallback(response.read(), imagePath)
 
 
 def makeChartForCharacter(filePath):
